@@ -1,8 +1,11 @@
 'use strict';
 module.exports = {
-	packageConfig: {},
 	electronPackagerConfig: {
-		packageManager: 'npm'
+		packageManager: 'npm',
+		asar: false
+	},
+	make_targets: {
+		win32: ['squirrel']
 	},
 	makers: [{
 		name: '@electron-forge/maker-squirrel',

@@ -48,6 +48,10 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 
 This can be packaged using Electron Forge.
 
+```bash
+npm run forge-make
+```
+
 Some notes:
 - electron forge requires that your [package.json](package.json)'s `main` be set to your electron app's entrypoint.
 - use package.json's `config.forge` property to point at an electron forge config file. see [forge.config.js](forge.config.js) for an example
