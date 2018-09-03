@@ -43,3 +43,11 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 ## License
 
 [CC0 1.0 (Public Domain)](LICENSE.md)
+
+## Building
+
+This can be packaged using Electron Forge.
+
+Some notes:
+- electron forge requires that your [package.json](package.json)'s `main` be set to your electron app's entrypoint.
+- use package.json's `config.forge` property to point at an electron forge config file. see [forge.config.js](forge.config.js) for an example
